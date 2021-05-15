@@ -1,0 +1,60 @@
+:root{
+    /* Cores de campos, bordas e linhas */
+    --blue:#04ADBF;
+    --grey: #EFEBEB;
+    --white: #FFFFFF;
+    --whiteDark: #F0F0F0;
+    --WhiteGrey: #F3F3F3;
+    --ligthBlue: #6CC1C1;
+    --red: rgb(255, 164, 164);
+    --green: rgb(88, 255, 116);
+
+    /* Fontes */
+    --Roboto: 'Roboto', sans-serif;
+    --Alfa-Slad-One: 'Alfa Slab One', cursive;
+}
+::-webkit-scrollbar-track-piece {
+    /* Barra progresso */
+    background-color: var(--color_04);
+}
+::-moz-scrollbar-track-piece {
+    /* Barra progresso */
+    background-color: var(--color_04);
+}
+::-webkit-scrollbar{
+    /* Barra de rolagem */
+    width: 0.2em;
+    height: 0.2em;
+}
+::-moz-scrollbar{
+    /* Barra de rolagem */
+    width: 0.2em;
+    height: 0.2em;
+}
+::-webkit-scrollbar-thumb {
+    /* Alça da barra de rolagem */
+    border-radius: 0.2em;
+    background-color: var(--color_03);
+}
+::-moz-scrollbar-thumb {
+    /* Alça da barra de rolagem */
+    border-radius: 0.2em;
+    background-color: var(--color_03);
+}
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    line-height: 1;
+    list-style: none;
+    box-shadow: none;
+    font-size: 1.4rem;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#root{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--whiteDark);
+}

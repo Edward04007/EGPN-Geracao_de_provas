@@ -4,7 +4,7 @@ import PageQuestoes from '../Pages/questoes'
 import PageResultado from '../Pages/resultado'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
-export default  function EGPN_Router() {
+export default function EGPN_Router() {
   return (
     <Router>
         <Switch>

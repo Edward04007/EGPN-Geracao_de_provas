@@ -1,0 +1,119 @@
+.card{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    padding: 0.5em;
+    margin-top: 2.2em;
+    position: relative;
+    border-radius: 0.7em;
+    flex-direction: column;
+    background-color: var(--blue);
+    box-shadow:6px 7px 5px -4px rgba(34, 35, 38, 0.13), -6px 7px 25px -5px rgba(40, 38, 39, 0.37);
+}
+.card-text{
+    width: 15em;
+    height: 12%;
+    display: flex;
+    margin: 0.2em;
+    padding: 0.5em;
+    align-items: center;
+    border-radius: 0.4em;
+    justify-content: center;
+    background-color: var(--ligthBlue);
+}
+.card-text > p{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-style: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--white);
+    font-family: var(--Roboto);
+}
+.card-title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.card-title > span{
+    cursor: default;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: var(--white);
+    font-family: var(--Roboto);
+}
+.cardQuest{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.7em;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardQuest > main{
+    width: 80%;
+    height: 30em;
+    padding: 0.3em;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: justify;
+    color: var(--white);
+    border-radius: 0.7em;
+    margin-bottom: 0.5em;
+    font-family: var(--Roboto);
+    background-color: var(--ligthBlue);
+}
+.cardQuest > main::-webkit-scrollbar-track-piece {
+    background-color: var(--blue);
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+}
+.cardQuest > main::-webkit-scrollbar{
+    width: 0.2em;
+    height: 0.2em;
+}
+.cardQuest > main::-webkit-scrollbar-thumb {
+    border-radius: 0.2em;
+    background-color: var(--ligthBlue);
+}
+.cardQuest > p{
+    width: 80%;
+    height: 5em;
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--white);
+    margin-bottom: 0.5em;
+    border-radius: 0.7em;
+    font-family: var(--Roboto);
+    background-color: var(--ligthBlue);
+}
+
+@media screen and (max-width: 800px){
+
+    .card{
+        width: 95%;
+        height: 85%;    
+    }
+    .card-text{
+        width: 80%;
+        height: 10%;
+    }
+    .card-text > p{
+        font-size: 0.8rem;
+    }
+    .cardQuest > main{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .cardQuest > p{
+        width: 100%;
+        height: 5em;
+        font-size: 0.8rem;
+    }
+}
