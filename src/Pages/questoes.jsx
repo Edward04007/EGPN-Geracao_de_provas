@@ -32,7 +32,6 @@ export default function Home(){
         if(quest[0].gabarito === ev.target.innerHTML){
 
             const At_cert = parseInt(sessionStorage.getItem('at_certo')) +1
-            console.log(At_cert)
             sessionStorage.setItem('at_certo', At_cert)
             Next()
         }else{
