@@ -32,7 +32,7 @@ export default function Home(){
             <Hearder title="EGPN"/>
             <Center>
                 <CardCenter>
-                    <SpaceForTitle title="Disciplinas"/>
+                    <SpaceForTitle title="Disciplinas para prova"/>
                     <Colunm>
                     {disc.map((d) => (
                         <SpaceForText 

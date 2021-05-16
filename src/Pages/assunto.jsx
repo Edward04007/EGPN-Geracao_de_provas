@@ -13,7 +13,7 @@ export default function Home(){
 
     const history = useHistory() 
     const [ass, setAss] = useState([]);
-    
+
     useEffect(() =>{
         Api.get(`a/${sessionStorage.getItem('fk_disc')}`).then(
             (response)=>{
@@ -25,6 +25,8 @@ export default function Home(){
     
     function NextPage(ev){
 
+        sessionStorage.setItem('at_certo', 0)
+        sessionStorage.setItem('at_error', 0)
         sessionStorage.setItem('fk_ass', ev.target.id)
         history.push("/questoes")
     }
@@ -38,7 +40,7 @@ export default function Home(){
             <Hearder title="EGPN"/>
             <Center>
                 <CardCenter>
-                    <SpaceForTitle title="Disciplinas"/>
+                    <SpaceForTitle title="Conteúdo para a prova"/>
                     <Colunm>
                     {ass.map((a) => (
                         <SpaceForText 

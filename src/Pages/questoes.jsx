@@ -31,11 +31,12 @@ export default function Home(){
 
         if(quest[0].gabarito === ev.target.innerHTML){
 
-            const At_cert = sessionStorage.getItem('at_certo') +1
+            const At_cert = parseInt(sessionStorage.getItem('at_certo')) +1
+            console.log(At_cert)
             sessionStorage.setItem('at_certo', At_cert)
             Next()
         }else{
-            const At_Error = sessionStorage.getItem('at_error') +1
+            const At_Error = parseInt(sessionStorage.getItem('at_error')) +1
             sessionStorage.setItem('at_error', At_Error) 
             Next()
         }
@@ -69,7 +70,7 @@ export default function Home(){
             <Center>
                 <CardCenter>
                     <SpaceForTitle 
-                        title="Disciplinas"/>
+                        title="Questões"/>
                     <Colunm>
                     {quest.map((q) => (
                         <SpaceQuest 

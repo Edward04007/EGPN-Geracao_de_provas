@@ -21,7 +21,7 @@ export default function Resultado(){
             <Center>
                 <CardCenter>
                     <SpaceForTitle 
-                        title="Resultado"/>
+                        title="Resultado da prova"/>
                     <Colunm>
                         <SpaceForText 
                             content={total}/>
