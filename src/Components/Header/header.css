@@ -6,12 +6,12 @@
     padding: 0.5em;
     position: fixed;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--blue);
     box-shadow:6px 7px 5px -4px rgba(34, 35, 38, 0.13),
     -6px 7px 25px -5px rgba(40, 38, 39, 0.37);
 }
-.header span{
+.header > span{
     cursor: default;
     font-size: 1.2rem;
     color: var(--white);

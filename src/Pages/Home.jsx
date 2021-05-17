@@ -1,6 +1,6 @@
 import Api from '../Service/api' 
-import { useHistory } from 'react-router';
-import { useEffect, useState } from 'react';
+import { useHistory } from 'react-router'
+import { useEffect, useState } from 'react'
 import CardCenter from '../Components/Card/card'
 import Hearder from '../Components/Header/header'
 import Colunm from '../Components/Direction/column'
@@ -10,6 +10,7 @@ import SpaceForTitle from '../Components/Card/card_title'
 
 export default function Home(){
 
+    const history = useHistory() 
    const [disc, setDisc] = useState([]);
     
     useEffect(() =>{
@@ -21,26 +22,27 @@ export default function Home(){
         )
     },[])
     
-    const history = useHistory() 
     function NextPage(ev){
 
         sessionStorage.setItem('fk_disc', ev.target.id)
         history.push("/assunto")
     }
+
     return(
         <>    
-            <Hearder title="EGPN"/>
+            <Hearder 
+                title="EGPN"/>
             <Center>
                 <CardCenter>
-                    <SpaceForTitle title="Disciplinas para prova"/>
+                    <SpaceForTitle 
+                        title="Escolha uma disciplina"/>
                     <Colunm>
                     {disc.map((d) => (
                         <SpaceForText 
                             key={d.pk_id}
                             href={d.pk_id}  
                             click={NextPage} 
-                            content={d.disciplina}/>
-                    ))}
+                            content={d.disciplina}/>))}
                     </Colunm>
                 </CardCenter>
             </Center>

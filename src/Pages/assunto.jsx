@@ -1,6 +1,6 @@
 import Api from '../Service/api' 
-import { useHistory } from 'react-router';
-import { useEffect, useState } from 'react';
+import { useHistory } from 'react-router'
+import { useEffect, useState } from 'react'
 import CardCenter from '../Components/Card/card'
 import Button from '../Components/Button/button'
 import Hearder from '../Components/Header/header'
@@ -35,20 +35,22 @@ export default function Home(){
 
         history.push("/")
     }
+
     return(
         <>    
-            <Hearder title="EGPN"/>
+            <Hearder 
+                title="EGPN"/>
             <Center>
                 <CardCenter>
-                    <SpaceForTitle title="Conteúdo para a prova"/>
+                    <SpaceForTitle 
+                        title="Escolha um conteúdo"/>
                     <Colunm>
                     {ass.map((a) => (
                         <SpaceForText 
                             key={a.pk_id}
                             href={a.pk_id}  
                             click={NextPage} 
-                            content={a.assunto}/>
-                    ))}
+                            content={a.assunto}/>))}
                         <Button
                             op={1}
                             click2={Back}/>

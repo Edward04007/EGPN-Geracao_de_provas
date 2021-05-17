@@ -1,6 +1,6 @@
 import Api from '../Service/api' 
-import { useHistory } from 'react-router';
-import { useEffect, useState } from 'react';
+import { useHistory } from 'react-router'
+import { useEffect, useState } from 'react'
 import CardCenter from '../Components/Card/card'
 import Button from '../Components/Button/button'
 import Hearder from '../Components/Header/header'
@@ -42,7 +42,6 @@ export default function Home(){
     }
 
     function Next(){
-
         if(nav.current_page !== nav.total){
 
             const page = nav.current_page +1
@@ -81,8 +80,7 @@ export default function Home(){
                             c={q.alternativa_c}
                             d={q.alternativa_d}
                             e={q.alternativa_e}
-                            click3={QuestValidate}/>
-                    ))}
+                            click3={QuestValidate}/>))}
                         <Button
                             click1={Next}
                             click2={Back}/>
