@@ -2,7 +2,6 @@ import Api from "../Service/api";
 import { useHistory } from "react-router";
 import { useEffect, useState } from "react";
 import CardCenter from "../Components/Card/card";
-import Button from "../Components/Button/button";
 import Hearder from "../Components/Header/header";
 import Colunm from "../Components/Direction/column";
 import Center from "../Components/Direction/center";
@@ -11,23 +10,17 @@ import SpaceForTitle from "../Components/Card/card_title";
 
 export default function Home() {
   const history = useHistory();
-  const [ass, setAss] = useState([]);
+  const [disc, setDisc] = useState([]);
 
   useEffect(() => {
-    Api.get(`a/${sessionStorage.getItem("fk_disc")}`).then((response) => {
-      setAss(response.data.data);
+    Api.get("d").then((response) => {
+      setDisc(response.data.data);
     });
   }, []);
 
   function NextPage(ev) {
-    sessionStorage.setItem("at_certo", 0);
-    sessionStorage.setItem("at_error", 0);
-    sessionStorage.setItem("fk_ass", ev.target.id);
-    history.push("/questoes");
-  }
-
-  function Back() {
-    history.push("/");
+    sessionStorage.setItem("fk_disc", ev.target.id);
+    history.push("/assunto");
   }
 
   return (
@@ -35,17 +28,16 @@ export default function Home() {
       <Hearder title="EGPN" />
       <Center>
         <CardCenter>
-          <SpaceForTitle title="Escolha um conteúdo" />
+          <SpaceForTitle title="Escolha uma disciplina" />
           <Colunm column={1}>
-            {ass.map((a) => (
+            {disc.map((d) => (
               <SpaceForText
-                key={a.pk_id}
-                href={a.pk_id}
+                key={d.pk_id}
+                href={d.pk_id}
                 click={NextPage}
-                content={a.assunto}
+                content={d.disciplina}
               />
             ))}
-            <Button op={1} click2={Back} />
           </Colunm>
         </CardCenter>
       </Center>

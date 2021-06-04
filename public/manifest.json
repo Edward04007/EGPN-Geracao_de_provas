@@ -1,53 +1,53 @@
 {
-    "dir": "ltr",
-    "lang": "pt-BR",
-    "name": "EGPN",
-    "short_name": "EGPN",
-    "scope": "/",
-    "display": "standalone",
-    "start_url": "https://egpn-geracao-de-provas.vercel.app/",
-    "background_color": "#F0F0F0",
-    "theme_color": "#04ADBF",
-    "description": "Teste seu conhecimento de forma rápida com o EGPN",
-    "orientation": "any",
-    "related_applications": [],
-    "prefer_related_applications": false,
-    "icons": [
-        {
-            "src": "https://i.imgur.com/p9uL54S.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "https://i.imgur.com/Vs4R6IY.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
-            "src": "https://i.imgur.com/HTQNXaV.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "https://i.imgur.com/r0iwHCV.png",
-            "sizes": "64x64",
-            "type": "image/png"
-        },
-        {
-            "src": "https://i.imgur.com/BU50BU5.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "https://i.imgur.com/Tkg3Z14.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        },
-        {
-            "src": "https://i.imgur.com/fLhw5IR.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        }
-    ],
-    "url": "https://egpn-geracao-de-provas.vercel.app/"
+  "dir": "ltr",
+  "lang": "pt-BR",
+  "name": "EGPN",
+  "short_name": "EGPN",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "https://egpn-geracao-de-provas.vercel.app/",
+  "background_color": "#F0F0F0",
+  "theme_color": "#04ADBF",
+  "description": "Teste seu conhecimento de forma rápida com o EGPN",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://i.imgur.com/p9uL54S.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/Vs4R6IY.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/HTQNXaV.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/r0iwHCV.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/BU50BU5.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/Tkg3Z14.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/fLhw5IR.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "url": "https://egpn-geracao-de-provas.vercel.app/"
 }
