@@ -57,52 +57,21 @@
 .cardQuest {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.cardQuest > main {
-  width: 80%;
-  height: auto;
-  padding: 0.3em;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 10em;
-  border-radius: 1em;
-  text-align: justify;
-  color: var(--white);
-  margin-bottom: 0.5em;
-  font-family: var(--Roboto);
-  background-color: var(--ligthBlue);
-}
-.cardQuest > main:hover {
-  border: 3px solid var(--green);
-}
-.cardQuest > main::-webkit-scrollbar-track-piece {
-  background-color: var(--blue);
-  border-top-right-radius: 0.7em;
-  border-bottom-right-radius: 0.7em;
-}
-.cardQuest > main::-webkit-scrollbar {
-  width: 0.2em;
-  height: 0.2em;
-}
-.cardQuest > main::-webkit-scrollbar-thumb {
-  border-radius: 0.2em;
-  background-color: var(--ligthBlue);
 }
 .cardQuest > p {
   width: 80%;
   height: auto;
-  padding: 0.5em;
+  margin: 0 auto;
+  font-size: 1rem;
   cursor: pointer;
+  padding: 0.3em;
   font-size: 1rem;
   border-radius: 1em;
+  margin-bottom: 0.5em;
   text-align: justify;
   color: var(--white);
-  margin-bottom: 0.5em;
   font-family: var(--Roboto);
+  border: solid 3px transparent;
   background-color: var(--ligthBlue);
 }
 .cardQuest > p:hover {
@@ -128,31 +97,13 @@
   margin-bottom: 0.5em;
   border-radius: 0.7em;
   font-family: var(--Roboto);
+  border: solid 3px transparent;
   background-color: var(--ligthBlue);
 }
 .card-title-justify > p:hover {
   border: solid 3px var(--green);
 }
-@media screen and (max-width: 1300px) {
-  .cardQuest > main {
-    margin-top: 12em;
-  }
-}
-@media screen and (max-width: 1232px) {
-  .cardQuest > main {
-    margin-top: 13em;
-  }
-}
-@media screen and (max-width: 1132px) {
-  .cardQuest > main {
-    margin-top: 17em;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .cardQuest > main {
-    margin-top: 25em;
-  }
-}
+
 @media screen and (max-width: 800px) {
   .card {
     width: 95%;
@@ -160,11 +111,6 @@
   }
   .card-text > p {
     width: 100%;
-    font-size: 0.8rem;
-  }
-  .cardQuest > main {
-    width: 90%;
-    margin-top: 4em;
     font-size: 0.8rem;
   }
   .cardQuest > p {
@@ -189,77 +135,27 @@
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 685px) {
-  .cardQuest > main {
-    margin-top: 7em;
-  }
-}
-@media screen and (max-width: 634px) {
-  .cardQuest > main {
-    margin-top: 10em;
-  }
-}
-@media screen and (max-width: 610px) {
-  .cardQuest > main {
-    margin-top: 14em;
-  }
-}
-@media screen and (max-width: 590px) {
-  .cardQuest > main {
-    margin-top: 17em;
-  }
-}
-@media screen and (max-width: 490px) {
-  .cardQuest > main {
-    margin-top: 23em;
-  }
-}
-@media screen and (max-width: 430px) {
-  .cardQuest > main {
-    margin-top: 27em;
-  }
-}
 @media screen and (max-width: 420px) {
-  .cardQuest > main {
-    margin-top: 15em;
-    font-size: 0.6rem;
-  }
   .cardQuest > p {
     font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 380px) {
-  .cardQuest > main {
-    margin-top: 20em;
-    font-size: 0.6rem;
-  }
   .cardQuest > p {
     font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 340px) {
-  .cardQuest > main {
-    margin-top: 25em;
-    font-size: 0.6rem;
-  }
   .cardQuest > p {
     font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 320px) {
-  .cardQuest > main {
-    margin-top: 30em;
-    font-size: 0.6rem;
-  }
   .cardQuest > p {
     font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 290px) {
-  .cardQuest > main {
-    margin-top: 32em;
-    font-size: 0.5rem;
-  }
   .cardQuest > p {
     width: 100%;
     height: 5em;

@@ -26,7 +26,7 @@ export default function Resultado() {
   function Back() {
     history.push("/");
   }
-
+  console.log(gaba)
   return (
     <>
       <Hearder title="EGPN" />
@@ -38,7 +38,7 @@ export default function Resultado() {
             <SpaceForText content={total} />
             <SpaceForTitle title="Respostas" />
             {gaba.map((g) => (
-              <SpaceTextGabarito content={g.gabarito} />
+              <SpaceTextGabarito key={g.pk_id} content={g.gabarito} />
             ))}
             <Button op={1} click2={Back} />
           </Colunm>
